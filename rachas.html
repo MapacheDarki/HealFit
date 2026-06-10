@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachas | HealthFit Training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="brand">
+        <span class="logo">🏋️</span>
+        <div>
+            <p class="eyebrow">HealthFit Training</p>
+            <h1>Rachas</h1>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="rutinas.html">Rutinas</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="configuracion.html">Configuración</a>
+        <a href="rachas.html">Rachas</a>
+        <a href="opciones.html">Opciones</a>
+        <a href="ayuda.html">Ayuda</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <button id="theme-toggle" class="theme-btn" type="button">Modo oscuro</button>
+</header>
+<main>
+    <section class="section-header" style="margin-top: 48px;">
+        <p class="eyebrow">Rachas</p>
+        <h2>Monitorea tu constancia</h2>
+        <p>Registra tus días de entrenamiento y descubre tu mejor racha.</p>
+    </section>
+    <section class="card-grid section-column">
+        <div class="card">
+            <h3>Racha actual</h3>
+            <p><strong>Días seguidos:</strong> <span id="streak-current">0</span></p>
+            <button id="streak-button" class="btn btn-primary" type="button">Registrar día completado</button>
+        </div>
+        <div class="card">
+            <h3>Mejor racha</h3>
+            <p><strong>Mayor racha:</strong> <span id="streak-best">0</span></p>
+            <p>Intenta mejorar tu récord cada semana.</p>
+        </div>
+        <div class="card">
+            <h3>Última sesión</h3>
+            <p><strong>Última fecha:</strong> <span id="streak-last">-</span></p>
+            <p>Cada día cuenta para mantener tu ritmo y hábitos saludables.</p>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>© 2026 HealthFit Training · Rachas de entrenamiento</p>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>

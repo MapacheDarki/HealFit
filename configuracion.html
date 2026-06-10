@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración | HealthFit Training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="brand">
+        <span class="logo">🏋️</span>
+        <div>
+            <p class="eyebrow">HealthFit Training</p>
+            <h1>Configuración de rutina</h1>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="rutinas.html">Rutinas</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="configuracion.html">Configuración</a>
+        <a href="rachas.html">Rachas</a>
+        <a href="opciones.html">Opciones</a>
+        <a href="ayuda.html">Ayuda</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <button id="theme-toggle" class="theme-btn" type="button">Modo oscuro</button>
+</header>
+<main>
+    <section class="section-header" style="margin-top: 48px;">
+        <p class="eyebrow">Configuración</p>
+        <h2>Personaliza tu plan de entrenamiento</h2>
+        <p>Selecciona tus días, duración y enfoque para la rutina que mejor se adapte a ti.</p>
+    </section>
+    <section class="section-column">
+        <div class="card">
+            <h3>Ajusta tu plan semanal</h3>
+            <form id="routine-form">
+                <label for="routine-days">Días por semana</label>
+                <select id="routine-days" name="days">
+                    <option value="3">3 días</option>
+                    <option value="4">4 días</option>
+                    <option value="5">5 días</option>
+                </select>
+
+                <label for="routine-duration">Duración</label>
+                <select id="routine-duration" name="duration">
+                    <option value="20">20 minutos</option>
+                    <option value="35">35 minutos</option>
+                    <option value="50">50 minutos</option>
+                </select>
+
+                <label for="routine-focus">Enfoque</label>
+                <select id="routine-focus" name="focus">
+                    <option value="fuerza">Fuerza</option>
+                    <option value="cardio">Cardio</option>
+                    <option value="movilidad">Movilidad</option>
+                    <option value="mixto">Mixto</option>
+                </select>
+
+                <button type="submit" class="btn btn-primary">Guardar configuración</button>
+                <p id="routine-status" class="status-message"></p>
+            </form>
+        </div>
+        <div class="card">
+            <h3>Resumen de rutina</h3>
+            <p><strong>Días por semana:</strong> <span id="display-days">-</span></p>
+            <p><strong>Duración:</strong> <span id="display-duration">-</span></p>
+            <p><strong>Enfoque:</strong> <span id="display-focus">-</span></p>
+            <p>Los datos se guardan localmente para mantener tu plan incluso si sales del sitio.</p>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>© 2026 HealthFit Training · Configuración de rutina</p>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>

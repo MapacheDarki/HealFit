@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutinas | HealthFit Training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="brand">
+        <span class="logo">🏋️</span>
+        <div>
+            <p class="eyebrow">HealthFit Training</p>
+            <h1>Rutinas de Entrenamiento</h1>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="rutinas.html">Rutinas</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="configuracion.html">Configuración</a>
+        <a href="rachas.html">Rachas</a>
+        <a href="opciones.html">Opciones</a>
+        <a href="ayuda.html">Ayuda</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <button id="theme-toggle" class="theme-btn" type="button">Modo oscuro</button>
+</header>
+
+<main>
+    <section class="section-header" style="margin-top: 48px;">
+        <p class="eyebrow">Entrenamientos</p>
+        <h2>Escoge tu rutina</h2>
+    </section>
+
+    <section class="card-grid" style="padding: 0 24px 40px;">
+        <div class="card workout-card">
+            <div class="card-title"><span class="card-icon">💪</span><h3>Fuerza total</h3></div>
+            <p class="routine-summary">Un entrenamiento completo con énfasis en fuerza y estabilidad.</p>
+            <button class="btn btn-secondary toggle-details" type="button">Mostrar ejercicios</button>
+            <div class="routine-details hidden">
+                <ul>
+                    <li>12 Sentadillas con carga</li>
+                    <li>10 Peso muerto</li>
+                    <li>10 Press de pecho</li>
+                    <li>30 segundos de plancha con elevación de pierna</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card workout-card">
+            <div class="card-title"><span class="card-icon">⚡</span><h3>Circuito HIIT</h3></div>
+            <p class="routine-summary">Sesiones rápidas para quemar calorías y mejorar tu resistencia aeróbica.</p>
+            <button class="btn btn-secondary toggle-details" type="button">Mostrar ejercicios</button>
+            <div class="routine-details hidden">
+                <ul>
+                    <li>30s Burpees</li>
+                    <li>30s Saltos en estrella</li>
+                    <li>30s Mountain climbers</li>
+                    <li>30s Sprint en el sitio</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card workout-card">
+            <div class="card-title"><span class="card-icon">🧘</span><h3>Core y movilidad</h3></div>
+            <p class="routine-summary">Fortalece el abdomen y mejora tu postura con movimientos dinámicos.</p>
+            <button class="btn btn-secondary toggle-details" type="button">Mostrar ejercicios</button>
+            <div class="routine-details hidden">
+                <ul>
+                    <li>20 Puentes de glúteos</li>
+                    <li>15 Plancha lateral por lado</li>
+                    <li>12 Elevaciones de piernas</li>
+                    <li>1 minuto de estiramientos isométricos</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card workout-card">
+            <div class="card-title"><span class="card-icon">🌿</span><h3>Recuperación activa</h3></div>
+            <p class="routine-summary">Mantén el cuerpo en movimiento suave para acelerar la recuperación.</p>
+            <button class="btn btn-secondary toggle-details" type="button">Mostrar ejercicios</button>
+            <div class="routine-details hidden">
+                <ul>
+                    <li>10 minutos de caminata ligera</li>
+                    <li>Estiramientos de cadera y espalda</li>
+                    <li>Rotaciones de torso</li>
+                    <li>Respiraciones profundas de relajación</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-header" style="margin-top: 0; padding: 24px 24px 0;">
+        <p class="eyebrow">Clasificaciones</p>
+        <h2>Escoge el nivel que mejor se ajusta a ti</h2>
+        <p>Selecciona tu categoría y comienza con la rutina diseñada para tu experiencia.</p>
+    </section>
+    <section class="card-grid" style="padding: 0 24px 40px;">
+        <div class="card">
+            <div class="card-title"><span class="card-icon">🚀</span><h3>Principiante</h3></div>
+            <p>Empieza con movimientos sencillos y ritmos suaves mientras construyes consistencia.</p>
+            <ul>
+                <li>Calentamiento ligero</li>
+                <li>Ejercicios de bajo impacto</li>
+                <li>Enfoque en técnica</li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="card-title"><span class="card-icon">🔥</span><h3>Intermedio</h3></div>
+            <p>Aumenta la intensidad y añade repeticiones para mejorar fuerza y resistencia.</p>
+            <ul>
+                <li>Entrenamientos mixtos</li>
+                <li>Movimientos compuestos</li>
+                <li>Recuperación activa</li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="card-title"><span class="card-icon">🏆</span><h3>Avanzado</h3></div>
+            <p>Retos más exigentes con mayor carga y series para desafiar tu condición física.</p>
+            <ul>
+                <li>Series con peso</li>
+                <li>Entrenamientos HIIT</li>
+                <li>Recuperación planificada</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section-header" style="margin-top: 0; padding: 24px 24px 0;">
+        <p class="eyebrow">Alimentación</p>
+        <h2>Nutrición inteligente para tu entrenamiento</h2>
+        <p>Una buena alimentación potencia tu rendimiento, ayuda a la recuperación y mantiene tu energía día a día.</p>
+    </section>
+    <section class="card-grid" style="padding: 0 24px 40px;">
+        <div class="card">
+            <div class="card-title"><span class="card-icon">💧</span><h3>Hidratación antes y después</h3></div>
+            <p>El agua es clave para el rendimiento. Bebe regularmente y recupera tu equilibrio tras el ejercicio.</p>
+            <ul>
+                <li>2-3 litros de agua por día</li>
+                <li>Agua con limón o infusiones light</li>
+                <li>Evita bebidas azucaradas</li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="card-title"><span class="card-icon">🥚</span><h3>Proteína para recuperar</h3></div>
+            <p>Incluye fuentes magras de proteína para ayudar al músculo a repararse después del entrenamiento.</p>
+            <ul>
+                <li>Pescado, pollo o tofu</li>
+                <li>Huevos y yogur griego</li>
+                <li>Legumbres y batidos protéicos</li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="card-title"><span class="card-icon">🍠</span><h3>Carbohidratos de calidad</h3></div>
+            <p>Escoge carbohidratos que te den energía sostenida y apoyen la recuperación física.</p>
+            <ul>
+                <li>Avena y arroz integral</li>
+                <li>Patata asada y quinoa</li>
+                <li>Frutas y verduras frescas</li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="card-title"><span class="card-icon">🥑</span><h3>Grasas saludables</h3></div>
+            <p>Las grasas buenas ayudan a tu bienestar general y a una recuperación más estable.</p>
+            <ul>
+                <li>Aguacate y frutos secos</li>
+                <li>Aceite de oliva extra virgen</li>
+                <li>Pescados grasos como salmón</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section-header" style="padding: 0 24px 0;">
+        <p class="eyebrow">Video</p>
+        <h2>Prueba una rutina en casa</h2>
+        <p>Selecciona uno de los videos para ver una demostración clara y profesional.</p>
+    </section>
+    <section class="video-section" style="padding: 0 24px 40px;">
+        <div class="video-selector">
+            <button class="btn btn-secondary video-select active" data-video="https://www.youtube-nocookie.com/embed/UItWltVZZmE">Rutina en casa</button>
+            <button class="btn btn-secondary video-select" data-video="https://www.youtube-nocookie.com/embed/2yjwXTZQDDI">Cardio rápido</button>
+            <button class="btn btn-secondary video-select" data-video="https://www.youtube-nocookie.com/embed/VHyGqsPOUHs">Estiramientos</button>
+        </div>
+        <div class="video-preview">
+            <div class="video-wrapper">
+                <iframe id="main-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UItWltVZZmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 HealthFit Training</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

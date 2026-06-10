@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil | HealthFit Training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="brand">
+        <span class="logo">🏋️</span>
+        <div>
+            <p class="eyebrow">HealthFit Training</p>
+            <h1>Tu perfil</h1>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="rutinas.html">Rutinas</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="configuracion.html">Configuración</a>
+        <a href="rachas.html">Rachas</a>
+        <a href="opciones.html">Opciones</a>
+        <a href="ayuda.html">Ayuda</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <button id="theme-toggle" class="theme-btn" type="button">Modo oscuro</button>
+</header>
+<main>
+    <section class="section-header" style="margin-top: 48px;">
+        <p class="eyebrow">Perfil</p>
+        <h2>Mi perfil</h2>
+        <p>Actualiza tus datos personales y accede a las secciones de configuración, rachas y opciones.</p>
+    </section>
+
+    <section class="section-nav" style="padding: 0 24px 20px;">
+        <div class="section-nav-links">
+            <a href="configuracion.html" class="btn btn-secondary">Configuración</a>
+            <a href="rachas.html" class="btn btn-secondary">Rachas</a>
+            <a href="opciones.html" class="btn btn-secondary">Opciones</a>
+            <a href="ayuda.html" class="btn btn-secondary">Ayuda</a>
+            <a href="contacto.html" class="btn btn-secondary">Contacto</a>
+        </div>
+    </section>
+
+    <section class="profile" id="mi-perfil">
+        <div class="profile-grid">
+            <div class="profile-card">
+                <h3>Mi información</h3>
+                <form id="profile-form">
+                    <label for="profile-name">Nombre</label>
+                    <input id="profile-name" name="name" type="text" placeholder="Ingresa tu nombre" required>
+
+                    <label for="profile-email">Correo</label>
+                    <input id="profile-email" name="email" type="email" placeholder="tu@correo.com" required>
+
+                    <label for="profile-level">Nivel</label>
+                    <select id="profile-level" name="level">
+                        <option value="principiante">Principiante</option>
+                        <option value="intermedio">Intermedio</option>
+                        <option value="avanzado">Avanzado</option>
+                    </select>
+
+                    <button type="submit" class="btn btn-primary">Guardar perfil</button>
+                    <p id="profile-status" class="status-message"></p>
+                </form>
+            </div>
+            <div class="profile-info">
+                <h3>Resumen del perfil</h3>
+                <p><strong>Nombre:</strong> <span id="profile-display-name">-</span></p>
+                <p><strong>Correo:</strong> <span id="profile-display-email">-</span></p>
+                <p><strong>Nivel:</strong> <span id="profile-display-level">-</span></p>
+                <p>Guarda tu información para que el sitio recuerde tu perfil y te ofrezca una experiencia personalizada.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="card-grid">
+        <div class="card">
+            <h3>Configuración de rutina</h3>
+            <p>Define tus días, duración y enfoque aquí.</p>
+            <a href="configuracion.html" class="btn btn-secondary">Ir a configuración</a>
+        </div>
+        <div class="card">
+            <h3>Rachas</h3>
+            <p>Registra tus días seguidos de entrenamiento y mira tu mejor racha.</p>
+            <a href="rachas.html" class="btn btn-secondary">Ver rachas</a>
+        </div>
+        <div class="card">
+            <h3>Opciones</h3>
+            <p>Activa recordatorios, notificaciones y sonidos de entrenamiento.</p>
+            <a href="opciones.html" class="btn btn-secondary">Ir a opciones</a>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>© 2026 HealthFit Training · Perfil de usuario</p>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
+
